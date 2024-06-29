@@ -5,26 +5,45 @@ import ShopApi from "./Components/Main/ShopApi";
 import CookieButton from "./Components/Main/CookieButton";
 import Reset from "./Components/Main/Reset";
 import CookieCounter from "./Components/Main/CookieCounter";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 export default function App() {
   // }
   const [cookies, setCookies] = useState(0);
   const [cps, setCps] = useState(1);
-
-  // function updateCookies(data) {
-  //   setCookies(data);
-  // }
+  useEffect(() => {}, [cps, setCookies]);
 
   return (
     <>
       <Header />
-      <CookieCounter cookies={cookies} cps={cps} setCookies={setCookies} />
+      <CookieCounter
+        cookies={cookies}
+        cps={cps}
+        setCookies={setCookies}
+        setCps={setCps}
+      />
       <div className="shop-cookie">
-        <ShopApi cookies={cookies} cps={cps} />
-        <CookieButton cookies={cookies} cps={cps} />
+        <ShopApi
+          cookies={cookies}
+          cps={cps}
+          setCookies={setCookies}
+          setCps={setCps}
+        />
+
+        <Reset
+          cookies={cookies}
+          cps={cps}
+          setCookies={setCookies}
+          setCps={setCps}
+        />
+
+        <CookieButton
+          cookies={cookies}
+          cps={cps}
+          setCookies={setCookies}
+          setCps={setCps}
+        />
       </div>
-      <Reset />
 
       {/* Display the following elements on the page 
       - value of cookie 

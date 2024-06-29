@@ -5,5 +5,8 @@
 
 .resetBox {
   display: flex;
-  justify-content: end;
+  padding: 0;
+  margin: 0;
+  height: 50px;
+  width: 50px;
 }

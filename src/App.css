@@ -12,18 +12,11 @@
   justify-content: center;
 }
 
-@media (max-width: 450px) {
+@media (max-width: 500px) {
   .shop-cookie {
     display: flex;
     flex-direction: column-reverse;
     gap: 3rem;
     justify-content: center;
-  }
-
-  .resetBox {
-    display: flex;
-    position: absolute;
-    top: 40vh;
-    right: 5px;
   }
 }
