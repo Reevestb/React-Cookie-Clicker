@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import "./ShopApi.css";
+import ShopUpgrades from "./ShopUpgrades";
 
-export default function ShopUpgrades() {
+export default function Shop({ cookies, setCookies, setCps, cps }) {
   const [Shop, setShop] = useState([]);
   useEffect(() => {
     async function fetchData() {
@@ -20,14 +21,30 @@ export default function ShopUpgrades() {
         <h1 className="shopTitle">Shop</h1>
         {Shop.map((item) => {
           return (
-            <div key={item.id} className="shopApi">
-              <h2>Upgrade name: {item.name}</h2>
-              <p>Increase Amount By; {item.increase}</p>{" "}
-              <button>Cost {item.cost}</button>
-            </div>
+            <>
+              <div key={item.id} className="shopApi">
+                <h2>Upgrade name: {item.name}</h2>
+                <p>Increase Amount By: {item.increase}</p>{" "}
+                <ShopUpgrades
+                  cost={item.cost}
+                  increase={item.increase}
+                  setCookies={setCookies}
+                  setCps={setCps}
+                  cookies={cookies}
+                  cps={cps}
+                />
+              </div>
+            </>
           );
         })}
       </div>
     </>
   );
 }
+
+// function buyUpgrades({cost, increase}) {
+//   if (cookies >= cost) {
+//     setCookies((currentcookies) => currentcookies - cost);
+//     setCps((currentCps) => currentCps + increase);
+//   }
+// }

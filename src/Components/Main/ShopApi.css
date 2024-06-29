@@ -2,7 +2,9 @@
   max-width: 400px;
   max-height: 450px;
   overflow: scroll;
-  border: solid 1px black;
+  font-family: fantasy;
+
+  /* border: solid 1px black; */
 }
 
 .shopApi {
@@ -13,5 +15,6 @@
 
 .shopTitle {
   text-align: center;
-  font-family: fantasy;
+  text-decoration: solid 1px underline black;
+  text-underline-offset: 3px;
 }

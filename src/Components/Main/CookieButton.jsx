@@ -1,7 +1,7 @@
 import BtnClicker from "/Images/cookie.png";
 import "./CookieButton.css";
 
-export default function Clicker({ setCookies }) {
+export default function Clicker({ cookies, setCookies }) {
   return (
     <>
       <img

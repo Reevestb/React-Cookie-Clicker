@@ -1,7 +1,7 @@
 import ResetBtn from "/Images/reset.png";
 import "./Reset.css";
 
-export default function Reset({ setCookies, setCps }) {
+export default function Reset({ cookies, setCookies, cps, setCps }) {
   function Reset() {
     setCookies((currentCookies) => 0), setCps((currentCps) => 1);
   }

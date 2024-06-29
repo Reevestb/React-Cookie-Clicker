@@ -1,5 +1,11 @@
 .title {
   text-align: center;
-  font-family: fantasy;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
   font-size: 40px;
+}
+@media (max-width: 500px) {
+  .title {
+    font-size: 25px;
+  }
 }

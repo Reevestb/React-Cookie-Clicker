@@ -10,8 +10,8 @@ import { useState, useEffect } from "react";
 export default function App() {
   // }
   const [cookies, setCookies] = useState(0);
-  const [cps, setCps] = useState(1);
-  useEffect(() => {}, [cps, setCookies]);
+  const [cps, setCps] = useState(0);
+  // useEffect(() => {}, [cps, setCookies]);
 
   return (
     <>
