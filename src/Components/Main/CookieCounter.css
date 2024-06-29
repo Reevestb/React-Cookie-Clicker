@@ -1,0 +1,19 @@
+.counterBox {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  text-align: center;
+  padding-bottom: 2rem;
+}
+
+.counterBox h1 {
+  font-size: 30px;
+  font-family: fantasy;
+  margin: 0;
+}
+
+.counterBox h2 {
+  font-size: 25px;
+  font-family: fantasy;
+  margin: 0;
+}

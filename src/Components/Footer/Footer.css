@@ -1,0 +1,10 @@
+.FooterBox {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.copyright {
+  color: red;
+  text-align: center;
+  font-size: 0.8rem;
+}

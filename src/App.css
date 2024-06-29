@@ -2,5 +2,28 @@
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
-  text-align: center;
+  /* text-align: center; */
+  background-color: lightsteelblue;
+}
+.shop-cookie {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  justify-content: center;
+}
+
+@media (max-width: 450px) {
+  .shop-cookie {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 3rem;
+    justify-content: center;
+  }
+
+  .resetBox {
+    display: flex;
+    position: absolute;
+    top: 40vh;
+    right: 5px;
+  }
 }

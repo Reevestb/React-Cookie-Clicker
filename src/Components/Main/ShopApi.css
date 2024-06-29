@@ -1,0 +1,17 @@
+#shopBox {
+  max-width: 400px;
+  max-height: 450px;
+  overflow: scroll;
+  border: solid 1px black;
+}
+
+.shopApi {
+  max-width: 400px;
+  max-height: 200px;
+  border-bottom: dotted 1px black;
+}
+
+.shopTitle {
+  text-align: center;
+  font-family: fantasy;
+}
