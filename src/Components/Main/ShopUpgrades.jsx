@@ -16,14 +16,14 @@ export default function ShopUpgrades({
   return (
     <>
       <div className="buyBtn">
-        <button
+        <a
           href="#counterBox"
           className="btn-flip"
           data-back="Buy"
           onClick={buyUpgrades}
         >
           cost: {cost}
-        </button>
+        </a>
       </div>
     </>
   );
