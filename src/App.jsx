@@ -5,12 +5,17 @@ import ShopApi from "./Components/Main/ShopApi";
 import CookieButton from "./Components/Main/CookieButton";
 import Reset from "./Components/Main/Reset";
 import CookieCounter from "./Components/Main/CookieCounter";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function App() {
-  // }
-  const [cookies, setCookies] = useState(0);
-  const [cps, setCps] = useState(0);
+  const [cookies, setCookies] = useState(
+    parseInt(localStorage.getItem("cookies")) || 0
+  );
+  const [cps, setCps] = useState(parseInt(localStorage.getItem("cps")) || 0);
+  useEffect(() => {
+    localStorage.setItem("cookies", cookies.toString());
+    localStorage.setItem("cps", cps.toString());
+  }, [cookies, cps]);
 
   return (
     <>

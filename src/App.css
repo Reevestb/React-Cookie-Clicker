@@ -23,4 +23,16 @@
   .title {
     font-size: 20px;
   }
+
+  .shopTitle {
+    font-size: 22px;
+  }
+
+  .shopApi h2 {
+    font-size: 15px;
+  }
+
+  .shopApi p {
+    font-size: 12px;
+  }
 }
