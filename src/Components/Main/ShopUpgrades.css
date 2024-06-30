@@ -14,12 +14,13 @@
   position: relative;
   text-align: center;
   letter-spacing: 1px;
-  display: flex;
+  display: inline-block;
   text-decoration: none;
   font-family: fantasy;
   border: solid 1px white;
   background-color: #adadaf;
   font-size: 17px;
+  justify-content: center;
 
   &:hover {
     &:after {
@@ -40,7 +41,7 @@
     width: 100%;
     color: #323237;
     display: block;
-    transition: speed;
+    transition: 0.5s;
     position: absolute;
     background: #adadaf;
     content: attr(data-back);
@@ -52,6 +53,8 @@
   .btn-flip {
     font-size: 12px;
     /* line-height: 20px; */
+    text-align: center;
+    justify-content: center;
   }
 
   .buyBtn {
