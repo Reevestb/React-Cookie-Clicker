@@ -26,6 +26,7 @@ export default function Shop({ cookies, setCookies, setCps, cps }) {
               <div key={item.id} className="shopApi">
                 <h2>Upgrade name: {item.name}</h2>
                 <p>Increase Amount By: {item.increase}</p>
+                <p>Upgarde cost: {item.cost}</p>
                 <ShopUpgrades
                   cost={item.cost}
                   increase={item.increase}

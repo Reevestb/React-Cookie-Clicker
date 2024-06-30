@@ -3,7 +3,7 @@ import "./Reset.css";
 
 export default function Reset({ cookies, setCookies, cps, setCps }) {
   function Reset() {
-    setCookies((currentCookies) => 0), setCps((currentCps) => 0);
+    setCookies(0), setCps(0);
   }
 
   return (

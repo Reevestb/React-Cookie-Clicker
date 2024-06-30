@@ -6,6 +6,7 @@ export default function Clicker({ cookies, setCookies }) {
     <>
       <img
         className="clickerBtn"
+        id="clickerBtn"
         src={BtnClicker}
         onClick={() => setCookies((cookies) => cookies + 1)}
       />

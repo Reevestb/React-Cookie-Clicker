@@ -2,3 +2,11 @@
   max-height: 400px;
   max-width: 400px;
 }
+
+.clickerBtn:hover {
+  filter: drop-shadow(0 0 2em rgb(0, 204, 255));
+}
+
+.clickerBtn:active {
+  transform: rotate(355deg);
+}

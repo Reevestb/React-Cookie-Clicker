@@ -13,18 +13,20 @@ export default function ShopUpgrades({
       //   console.log(setCps, cps);
     }
   }
-  return (
-    <>
-      <div className="buyBtn">
-        <a
-          href="#counterBox"
-          className="btn-flip"
-          data-back="Buy"
-          onClick={buyUpgrades}
-        >
-          cost: {cost}
-        </a>
-      </div>
-    </>
-  );
+  //to conditinally render button if cookies greater than or equal to cost.
+  if (cookies >= cost)
+    return (
+      <>
+        <div className="buyBtn">
+          <a
+            href="#counterBox"
+            className="btn-flip"
+            data-back="Buy"
+            onClick={buyUpgrades}
+          >
+            Spend: {cost}
+          </a>
+        </div>
+      </>
+    );
 }
