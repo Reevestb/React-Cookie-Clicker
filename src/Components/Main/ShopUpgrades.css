@@ -52,7 +52,6 @@
 @media (max-width: 500px) {
   .btn-flip {
     font-size: 12px;
-    /* line-height: 20px; */
     text-align: center;
     justify-content: center;
   }
