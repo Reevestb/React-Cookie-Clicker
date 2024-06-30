@@ -1,3 +1,4 @@
+import "./ShopUpgrades.css";
 export default function ShopUpgrades({
   cookies,
   setCookies,
@@ -12,5 +13,18 @@ export default function ShopUpgrades({
       //   console.log(setCps, cps);
     }
   }
-  return <button onClick={buyUpgrades}>cost {cost}</button>;
+  return (
+    <>
+      <div className="buyBtn">
+        <button
+          href="#"
+          className="btn-flip"
+          data-back="Buy"
+          onClick={buyUpgrades}
+        >
+          cost: {cost}
+        </button>
+      </div>
+    </>
+  );
 }
