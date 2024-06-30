@@ -13,7 +13,7 @@ export default function Counter({ cookies, setCookies, cps }) {
 
   return (
     <>
-      <div className="counterBox">
+      <div className="counterBox" id="counterBox">
         <h1>Cookies: {cookies}</h1>
         <h2>Cookies Per Second: {cps}</h2>
       </div>

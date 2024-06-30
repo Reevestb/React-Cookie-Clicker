@@ -17,7 +17,7 @@ export default function ShopUpgrades({
     <>
       <div className="buyBtn">
         <button
-          href="#"
+          href="#counterBox"
           className="btn-flip"
           data-back="Buy"
           onClick={buyUpgrades}
